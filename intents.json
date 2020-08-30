@@ -1,0 +1,20 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Aug 30 16:00:35 2020
+
+@author: proficientpug
+"""
+
+{'intents':[
+        {'tag':'greeting',
+         'patterns':['hi','hello','how are you','whats up'],                       
+         'responses':['hello!!','hi there!','hey!!','how are you??',]
+         'learning_set':''
+         }
+        {'tag':'ending',
+         'patterns':['cya','later','goodbye','i am leaving','bye']
+         'resposes':['have a great day ahead!','sad to see you go:_(','talk to you later','goodbye!!','farewell, my friend!']
+         'learning_set':''
+         }
+         {}]}
