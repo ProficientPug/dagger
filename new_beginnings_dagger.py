@@ -44,20 +44,20 @@ result=[]
 out_empty=[0 for _ in range(len(labels))]
 
 for x , doc in enumerate(docs_x):
-	q=[]
-	pieces = [stemmer.stem(w.lower())]
+    q=[]
+    pieces = [stemmer.stem(w.lower())]
 
 
-	for w in words:
-		if w in pieces:
-			q.append(1)
-		else:
-		    q.append(0)
-            output_row = out_empty[]
-    	output_row[classes.index(docs_y[x])] = 1
+    for w in words:
+        if w in pieces:
+            q.append(1)
+        else:
+            q.append(0)
+            output_row = out_empty
+            output_row[classes.index(docs_y[x])] = 1
 
-        model.append(q)
-    result.append(output_row)
+    model.append(q)
+result.append(output_row)
 
 training = numpy.array(model)
 
