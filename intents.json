@@ -30,7 +30,36 @@
       "tag": "thanks",
       "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
       "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "help",
+      "patterns":  ["help","confused","assistance","assist"],
+      "responses": ["how can i help?","please tell me your issue","i'm here to help!"] 
+    },
+    {
+      "tag": "delivery",
+      "patterns": ["shipping","delivery","parcel"],
+      "responses": ["delivery time depends on the size and type of item that you have ordered",
+                    "your item has left our facility and is on it's way!",
+                    "your item hasn't been shipped yet, but fret not! it is on its way out very soon!"
+                    ]
+    },
+    {
+      "tag": "order",
+      "patterns": ["order"],
+      "responses": ["you can place an order by going to our website!"]
+    },
+    {
+      "tag":"sale",
+      "patterns": ["sell","sale"],
+      "responses": ["we sell electronics and related items!"]
+    },
+    {
+      "tag": "returns",
+      "patterns": ["return","defect"],
+      "responses": ["due to COVID-19 , we don't take product returns now",
+                    "please file a product return case in order to begin the returning procedure"
+                  ]
     }
-         
   ]
 }
