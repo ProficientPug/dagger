@@ -2,7 +2,7 @@ import random
 import json
 import torch
 
-from model import NeuralNet
+from bot_model import NeuralNet
 from sentence_preprocessing import bag_of_words, tokenize
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -31,6 +31,24 @@ while True:
     sentence = input("You: ")
     if sentence == "quit":
         break
+    if sentence == "features":
+        print("these are the extra features of this chatbot:")
+        print("")
+        print("")
+        print("")
+        print("")
+        choice = int(input("enter the corresponding number to the feature you want to use:"))
+        '''kausthu pls run the resp. modules as 1.we haven't completed them yet and
+        2. idk the names that u ppl will be keeping. so you do that'''
+        if choice == 1:
+            pass
+        if choice == 2:
+            pass
+        if choice == 3:
+            pass
+        if choice == 4:
+            pass
+
 
     sentence = tokenize(sentence)
     X = bag_of_words(sentence, all_words)
@@ -51,20 +69,4 @@ while True:
     else:
         print(f"{bot_name}: I do not understand...")
         
-    if sentence == "features":
-        print("these are the extra features of this chatbot:")
-        print("")
-        print("")
-        print("")
-        print("")
-        choice = int(input("enter the corresponding number to the feature you want to use:"))
-        '''kausthu pls run the resp. modules as 1.we haven't completed them yet and
-        2. idk the names that u ppl will be keeping. so you do that'''
-        if choice == 1:
-            pass
-        if choice == 2:
-            pass
-        if choice == 3:
-            pass
-        if choice == 4:
-            pass
+    
