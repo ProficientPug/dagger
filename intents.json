@@ -34,32 +34,40 @@
     {
       "tag": "help",
       "patterns":  ["help","confused","assistance","assist"],
-      "responses": ["how can i help?","please tell me your issue","i'm here to help!"] 
+      "responses": ["How can i help?","Please tell me your issue","I'm here to help!"] 
     },
     {
       "tag": "delivery",
       "patterns": ["shipping","delivery","parcel"],
-      "responses": ["delivery time depends on the size and type of item that you have ordered",
-                    "your item has left our facility and is on it's way!",
-                    "your item hasn't been shipped yet, but fret not! it is on its way out very soon!"
+      "responses": ["Delivery time depends on the size and type of item that you have ordered",
+                    "Your item has left our facility and is on it's way!",
+                    "Your item hasn't been shipped yet, but fret not! it is on its way out very soon!"
                     ]
     },
     {
       "tag": "order",
-      "patterns": ["order"],
-      "responses": ["you can place an order by going to our website!"]
+      "patterns": ["order","how to place an order?","how do i order"],
+      "responses": ["You can place an order by going to our website!"]
     },
     {
       "tag":"sale",
       "patterns": ["sell","sale"],
-      "responses": ["we sell electronics and related items!"]
+      "responses": ["We sell electronics and related items!"]
     },
     {
       "tag": "returns",
-      "patterns": ["return","defect"],
-      "responses": ["due to COVID-19 , we don't take product returns now",
-                    "please file a product return case in order to begin the returning procedure"
+      "patterns": ["return","defect","bad product"],
+      "responses": ["Due to COVID-19 , we don't take product returns now",
+                    "Please file a product return case in order to begin the returning procedure."
                   ]
+    },
+    {
+      "tag": "payment",
+      "patterns": ["what payment methods do you accept?","do you accept credit cards?",
+                   "do you accept debit cards?","do you accept cash?","cash?"],
+      "responses": ["We accept credit/debit cards and any UPI payment method.",
+                    "You can pay via online transactions.","We don't take cash."]
+      
     }
   ]
 }
