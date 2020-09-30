@@ -24,10 +24,9 @@ model = NeuralNet(input_size, hidden_size, output_size).to(device)
 model.load_state_dict(model_state)
 model.eval()
 
-bot_name = "Dagger"
+bot_name = "Linda"
 print("Let's chat! (type 'quit' to exit and 'features' to see the extras that have been tacked on!")
 while True:
-    # sentence exmaple = "do you use credit cards?"
     sentence = input("You: ")
     if sentence == "quit":
         break
