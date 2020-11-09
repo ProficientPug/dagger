@@ -1,7 +1,7 @@
 # dagger
  Class 12 CS Project. 
  Members - Rohith, Kausthuban, Abineshwar, Shylendra Prasad.
- We are doing - Machine learning Bot.
+ We are doing - "a machine learning bot for an ecommerce website".
  This bot uses pytorch and nltk to process what a person is talking and gives an appropriate reply.
  it might not be that accurate, but it works.
  so what basically happens in the processing is this:
