@@ -28,7 +28,7 @@ bot_name = "Linda"
 print("Let's chat! (type 'quit' to exit and 'features' to see the extras that have been tacked on!")
 while True:
     sentence = input("You: ")
-    if sentence == "quit":
+    if sentence == "quit" or "exit":
         break
     if sentence == "features":
         print("these are the extra features of this chatbot:")

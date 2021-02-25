@@ -28,17 +28,17 @@
     },
     {
       "tag": "thanks",
-      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!","ok","nice"],
       "responses": ["Happy to help!", "Any time!", "My pleasure"]
     },
     {
       "tag": "help",
-      "patterns":  ["help","confused","assistance","assist"],
+      "patterns":  ["help","confused","assist","problem","issue"],
       "responses": ["How can i help?","Please tell me your issue","I'm here to help!"] 
     },
     {
       "tag": "delivery",
-      "patterns": ["shipping","delivery","parcel"],
+      "patterns": ["shipping","delivery","parcel","tracking"],
       "responses": ["Delivery time depends on the size and type of item that you have ordered",
                     "Your item has left our facility and is on it's way!",
                     "Your item hasn't been shipped yet, but fret not! it is on its way out very soon!"
@@ -46,17 +46,17 @@
     },
     {
       "tag": "order",
-      "patterns": ["order","how to place an order?","how do i order"],
+      "patterns": ["order","how to place an order?","how do i order","purchase"],
       "responses": ["You can place an order by going to our website!"]
     },
     {
       "tag":"sale",
-      "patterns": ["sell","sale"],
-      "responses": ["We sell electronics and related items!"]
+      "patterns": ["sell","sale","what do you sell?"],
+      "responses": ["We sell keyboards and anything related to it!"]
     },
     {
       "tag": "returns",
-      "patterns": ["return","defect","bad product"],
+      "patterns": ["return","defect","bad product","replacement"],
       "responses": ["Due to COVID-19 , we don't take product returns now",
                     "Please file a product return case in order to begin the returning procedure."
                   ]
@@ -64,9 +64,20 @@
     {
       "tag": "payment",
       "patterns": ["what payment methods do you accept?","do you accept credit cards?",
-                   "do you accept debit cards?","do you accept cash?","cash?"],
+                   "do you accept debit cards?","do you accept cash?","cash?","how to make payment?","payment methods","how to pay?"],
       "responses": ["We accept credit/debit cards and any UPI payment method.",
                     "You can pay via online transactions.","We don't take cash."]
+      
+    },
+    {
+      "tag":"Keyboards",
+      "patterns":["mechanical keyboards","keyboards","gaming keyboard","keyboard"],
+      "responses":["we sell keyboards from many brands such as logitech, razer, skyloong, antesports and many others"]
+    },
+    {
+      "tag":"custom",
+      "patterns":["custom keyboards","custom board","custom","customized"],
+      "responses":[""]
       
     }
   ]
