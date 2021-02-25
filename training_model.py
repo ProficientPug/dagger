@@ -1,6 +1,8 @@
 import numpy as np
 import random
 import json
+import nltk
+nltk.download('punkt')
 
 import torch
 import torch.nn as nn
