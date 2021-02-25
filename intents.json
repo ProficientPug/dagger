@@ -68,6 +68,15 @@
       "responses": ["We accept credit/debit cards and any UPI payment method.",
                     "You can pay via online transactions.","We don't take cash."]
       
-    }
-  ]
+    },
+	{
+		"tag": "crash",
+		"patterns": ["The website crashes when i place a order","There is an website crash"],
+		"responses":[" our technical team are working on it as we speak,Sorry for the inconvenience :("]
+	},
+	{	
+		"tag": "Logitech"
+		"patterns": ["Logitech keyboards","Logitech"]
+	}
+]
 }

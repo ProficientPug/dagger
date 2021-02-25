@@ -37,14 +37,12 @@ while True:
         print("3. Number Memory Test")
         print("")
         choice = int(input("enter the corresponding number to the feature you want to use:"))
-        '''kausthu pls run the resp. modules as 1.we haven't completed them yet and
-        2. idk the names that u ppl will be keeping. so you do that'''
         if choice == 1:
-            import Fortune_Teller.py
+            import Fortune_Teller
         if choice == 2:
-            import number_memory_module
+            import random_fact
         if choice == 3:
-            pass
+            import number_memory_module
         if choice == 4:
             pass
 
