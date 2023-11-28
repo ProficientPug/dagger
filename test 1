@@ -1,0 +1,38 @@
+#! /bin/bash
+
+# Check if Hadoop is already installed
+read -p "Have you already installed Hadoop? (yes/no): " answer
+
+if [ "$answer" == "no" ]; then
+    bash hadoop_installation.sh
+fi
+
+# Installation and extraction
+wget https://downloads.apache.org/hive/hive-3.1.2/apache-hive-3.1.2-bin.tar.gz
+tar xzf apache-hive-3.1.2-bin.tar.gz -C ~/hadoop
+
+# Setting Environment variables
+echo "export HIVE_HOME=~/hadoop/apache-hive-3.1.2-bin" >> ~/.bashrc
+echo "export PATH=\$PATH:\$HIVE_HOME/bin" >> ~/.bashrc
+
+source ~/.bashrc
+
+echo "export HADOOP_HOME=\$HADOOP_HOME" >> ~/hadoop/apache-hive-3.1.2-bin/conf/hive-env.sh
+
+# Creating directories in hdfs
+$HADOOP_HOME/bin/hdfs dfs -mkdir /temp
+$HADOOP_HOME/bin/hdfs dfs -chmod g+w /tmp
+$HADOOP_HOME/bin/hdfs dfs -ls /
+
+$HADOOP_HOME/bin/hdfs dfs -mkdir -p /user/hive/warehouse
+$HADOOP_HOME/bin/hdfs dfs -chmod g+w /user/hive/warehouse
+$HADOOP_HOME/bin/hdfs dfs -ls /user/hive
+
+# site-file
+wget https://raw.githubusercontent.com/apache/hive/master/data/conf/hive-site.xml
+
+# Initializing schema
+$HIVE_HOME/bin/schematool -dbType derby -initSchema
+
+cd $HIVE_HOME/bin
+hive
